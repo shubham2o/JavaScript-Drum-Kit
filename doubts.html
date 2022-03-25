@@ -7,5 +7,24 @@
     <title>Doubts</title>
 </head>
 <body>
+
+    <!-- What is data-key? Why we use them? -->
+    <h2>What is data-key? Why we use them?</h2>
+    <p>• The data-* attribute is used to store custom data private to the page or application.</p>
+    <p>• The data-* attribute gives us the ability to embed custom data attributes on all HTML elements.</p>
+    <p>• The data-* attribute consists of two parts: <br>
+    1. The attribute name should not contain any uppercase letters, and must be at least one character long after 
+    the prefix "data-". <br>
+    2. The attribute value can be any string.</p>
+    <p>Click in a species to see what type it is:</p>
+    <ul>
+        <li onclick = "showDetails(this)" data-animal-type = "bird">OWL</li>
+        <li onclick = "showDetails(this)" data-animal-type = "fish">SALMON</li>
+        <li onclick = "showDetails(this)" data-animal-type = "spider">TARANTULA</li>
+    </ul>
+    <hr>
+
+    <script src = "doubts.js"></script>
+
 </body>
 </html>
