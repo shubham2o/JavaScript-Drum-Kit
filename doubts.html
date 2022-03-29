@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="doubts.css">
     <title>Doubts</title>
 </head>
+
 <body>
 
     <!-- What is data-key? Why we use them? -->
@@ -14,14 +16,14 @@
     <p>• The data-* attribute is used to store custom data private to the page or application.</p>
     <p>• The data-* attribute gives us the ability to embed custom data attributes on all HTML elements.</p>
     <p>• The data-* attribute consists of two parts: <br>
-    1. The attribute name should not contain any uppercase letters, and must be at least one character long after 
-    the prefix "data-". <br>
-    2. The attribute value can be any string.</p>
+        1. The attribute name should not contain any uppercase letters, and must be at least one character long after
+        the prefix "data-". <br>
+        2. The attribute value can be any string.</p>
     <p>Click in a species to see what type it is:</p>
     <ul>
-        <li onclick = "showDetails(this)" data-animal-type = "bird">OWL</li>
-        <li onclick = "showDetails(this)" data-animal-type = "fish">SALMON</li>
-        <li onclick = "showDetails(this)" data-animal-type = "spider">TARANTULA</li>
+        <li onclick="showDetails(this)" data-animal-type="bird">OWL</li>
+        <li onclick="showDetails(this)" data-animal-type="fish">SALMON</li>
+        <li onclick="showDetails(this)" data-animal-type="spider">TARANTULA</li>
     </ul>
     <hr>
 
@@ -30,13 +32,14 @@
     <p>• The play() method starts playing the current audio.</p>
     <p>• This method is often used together with the pause() method.</p>
     <p>• Click the buttons to play or pause the audio.</p>
-    <audio id = "myAudio">
-        <source src = "" type = "audio/ogg">
+    <audio id="myAudio">
+        <source src="" type="audio/ogg">
         Your browser does not support the audio element.
     </audio>
-    <button onclick = "playAudio()">Play audio</button>
-    <button onclick = "pauseAudio()">Pause audio</button>
-    <br><br><hr>
+    <button onclick="playAudio()">Play audio</button>
+    <button onclick="pauseAudio()">Pause audio</button>
+    <br><br>
+    <hr>
 
     <!-- What does .currentTime do? -->
     <h2>What does .currentTime do?</h2>
@@ -44,43 +47,60 @@
     <p>• When setting this property, the playback will jump to the specified position.</p>
     <p>• Return the currentTime property : audio/video.currentTime</p>
     <p>• Set the currentTime property : audio/video.currentTime = "seconds"</p>
-    <button onclick = "getCurrentTime()">Get current time position</button>
-    <button onclick = "setCurrentTime()">Set time position to 5 seconds</button>
+    <button onclick="getCurrentTime()">Get current time position</button>
+    <button onclick="setCurrentTime()">Set time position to 5 seconds</button>
     <!-- <video id = "myVideo">
         <source src = "" type = "video/mp4">
         Your browser does not support HTML5 video.
     </video> -->
-    <br><br><hr>
+    <br><br>
+    <hr>
 
     <!-- What does .classList.toggle() do? -->
     <h2>What does .classList.toggle() do?</h2>
     <p>• The classList property returns the CSS classnames of an element.</p>
-    <p>• The classList property returns a DOMTokenList (It is a set of space separated tokens and can be accessed 
+    <p>• The classList property returns a DOMTokenList (It is a set of space separated tokens and can be accessed
         by index (starts at 0).)</p>
-    <p>• The classList property is read-only, but you can use methods to add, toggle or remove CSS classes from 
+    <p>• The classList property is read-only, but you can use methods to add, toggle or remove CSS classes from
         the list.</p>
     <p>• Toggle between adding and removing a class name from an element with JavaScript.</p>
     <p>• STEP 1 : Add HTML <br>
-    Toggle between adding a class name to the div element with id = "myDiv".</p>
+        Toggle between adding a class name to the div element with id = "myDiv".</p>
     <p>• STEP 2 : Add CSS <br>
-    Add a class name to toggle.</p>
+        Add a class name to toggle.</p>
     <p>• STEP 3 : Add JavaScript <br>
-    Get the div element with id = "myDiv" and toggle between the "myStyle" class.</p>
-    <p>• Click the "Try it" button to toggle between adding and removing the "myStyle" class name of the DIV element:</p>
-    <button onclick = "myToggle()">Try it</button><br><br>
-    <div id = "myDiv">This is a DIV element.</div>
-    <br><hr>
+        Get the div element with id = "myDiv" and toggle between the "myStyle" class.</p>
+    <p>• Click the "Try it" button to toggle between adding and removing the "myStyle" class name of the DIV element:
+    </p>
+    <button onclick="myToggle()">Try it</button><br><br>
+    <div id="myDiv">This is a DIV element.</div>
+    <br>
+    <hr>
 
     <!-- What does transitionend do ? -->
     <h2>What does transitionend do ?</h2>
     <p>• The transitionend event occures when a CSS transition has completed.</p>
-    <p>• If the transition is removed before completion, e.g. If the CSS transition-property is removed, the transition-end 
+    <p>• If the transition is removed before completion, e.g. If the CSS transition-property is removed, the
+        transition-end
         event will not fire.</p>
     <p>• Hover over the div element below, and wait for the transition effect to end.</p>
-    <div id = "myDiv1"></div>
-    <br><hr>
+    <div id="myDiv1"></div>
+    <br>
+    <hr>
 
-    <script src = "doubts.js"></script>
+    <!-- What does getAttribute() method do ? -->
+    <h2>The getAttribute() method</h2>
+    <p>• The getAttribute() method returns the value of an element's attribute.</p>
+    <h1 id="myH1" class="democlass">The Element Object</h1>
+    <p>• The value of the class attribute of the h2 element is :</p>
+    <p id="demo"></p>
+    Learn more about the <a id="myAnchor" href="dom_obj_attributes.asp" target="_blank">Attr object</a>.
+    <p>• The value of the target attribute of the link above is :</p>
+    <p id="demo1"></p>
+    <hr>
+
+    <script src="doubts.js"></script>
 
 </body>
+
 </html>

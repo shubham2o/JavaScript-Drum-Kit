@@ -43,3 +43,13 @@ function myTransitionEnd() {
     this.innerHTML = "transitionend event occured - The transition has completed";
     this.style.backgroundColor = "pink";
 }
+
+
+// What does getAttribute() method do ? 
+const element = document.getElementById("myH1");
+let text = element.getAttribute("class");
+document.getElementById("demo").innerHTML = text;
+
+const myAnchor = document.getElementById("myAnchor");
+let text1 = myAnchor.getAttribute("target");
+document.getElementById("demo1").innerHTML = text1;
