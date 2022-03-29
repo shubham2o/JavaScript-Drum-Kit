@@ -34,3 +34,12 @@ function myToggle() {
     var element = document.getElementById("myDiv");
     element.classList.toggle("myStyle");
 }
+
+
+// What does transitionend do ?
+document.getElementById("myDiv1").addEventListener("transitionend", myTransitionEnd);
+
+function myTransitionEnd() {
+    this.innerHTML = "transitionend event occured - The transition has completed";
+    this.style.backgroundColor = "pink";
+}

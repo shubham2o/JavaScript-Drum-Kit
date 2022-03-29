@@ -6,3 +6,17 @@
     font-size : 25px;
     box-sizing : border-box;
 }
+
+
+#myDiv1 {
+    width : 100px;
+    height : 100px;
+    background : red;
+    -webkit-transition : width 2s;
+    transition : width 2s;
+}
+
+
+#myDiv1:hover {
+    width : 400px;
+}
