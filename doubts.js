@@ -15,3 +15,15 @@ function playAudio() {
 function pauseAudio() {
     music.pause();
 }
+
+
+// What does .currentTime do?
+var vid = document.getElementById("myVideo");
+
+function getCurrentTime() {
+    alert(vid.currentTime);
+}
+
+function setCurrentTime() {
+    vid.currentTime = 5;
+}

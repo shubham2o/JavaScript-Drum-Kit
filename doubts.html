@@ -37,6 +37,19 @@
     <button onclick = "pauseAudio()">Pause audio</button>
     <br><br><hr>
 
+    <!-- What does .currentTime do? -->
+    <h2>What does .currentTime do?</h2>
+    <p>• The currentTime property sets or returns the current position (in seconds) of the audio/video playback.</p>
+    <p>• When setting this property, the playback will jump to the specified position.</p>
+    <p>• Return the currentTime property : audio/video.currentTime</p>
+    <p>• Set the currentTime property : audio/video.currentTime = "seconds"</p>
+    <button onclick = "getCurrentTime()">Get current time position</button>
+    <button onclick = "setCurrentTime()">Set time position to 5 seconds</button>
+    <video id = "myVideo">
+        <source src = "" type = "video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
     <script src = "doubts.js"></script>
 
 </body>
