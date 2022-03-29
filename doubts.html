@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doubts.css">
     <title>Doubts</title>
 </head>
 <body>
@@ -45,10 +46,30 @@
     <p>• Set the currentTime property : audio/video.currentTime = "seconds"</p>
     <button onclick = "getCurrentTime()">Get current time position</button>
     <button onclick = "setCurrentTime()">Set time position to 5 seconds</button>
-    <video id = "myVideo">
+    <!-- <video id = "myVideo">
         <source src = "" type = "video/mp4">
         Your browser does not support HTML5 video.
-    </video>
+    </video> -->
+    <br><br><hr>
+
+    <!-- What does .classList.toggle() do? -->
+    <h2>What does .classList.toggle() do?</h2>
+    <p>• The classList property returns the CSS classnames of an element.</p>
+    <p>• The classList property returns a DOMTokenList (It is a set of space separated tokens and can be accessed 
+        by index (starts at 0).)</p>
+    <p>• The classList property is read-only, but you can use methods to add, toggle or remove CSS classes from 
+        the list.</p>
+    <p>• Toggle between adding and removing a class name from an element with JavaScript.</p>
+    <p>• STEP 1 : Add HTML <br>
+    Toggle between adding a class name to the div element with id = "myDiv".</p>
+    <p>• STEP 2 : Add CSS <br>
+    Add a class name to toggle.</p>
+    <p>• STEP 3 : Add JavaScript <br>
+    Get the div element with id = "myDiv" and toggle between the "myStyle" class.</p>
+    <p>• Click the "Try it" button to toggle between adding and removing the "myStyle" class name of the DIV element:</p>
+    <button onclick = "myToggle()">Try it</button><br><br>
+    <div id = "myDiv">This is a DIV element.</div>
+    <hr>
 
     <script src = "doubts.js"></script>
 

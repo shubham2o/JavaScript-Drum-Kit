@@ -27,3 +27,10 @@ function getCurrentTime() {
 function setCurrentTime() {
     vid.currentTime = 5;
 }
+
+
+// What does .classList.toggle() do ?
+function myToggle() {
+    var element = document.getElementById("myDiv");
+    element.classList.toggle("myStyle");
+}
